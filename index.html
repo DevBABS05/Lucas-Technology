@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="edmu.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lucas Technology</div>
+
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contatcs</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Powering a Brighter Future</h1>
+            <p>We provide premium solar, street light, and billboard installation services with unmatched quality and professionalism.</p>
+            <button onclick="scrollToSection('services')">Explore Services</button>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="bg3.jpeg" alt="">
+                <h3>Solar Installation</h3>
+                <p>Reliable and sustainable solar energy solutions for homes, offices, and industries.</p>
+            </div>
+             <div class="card">
+                <img src="bg2.jpeg" alt="">
+                <h3>Street Light Installation</h3>
+                <p>Durable, energy-efficient street lighting for safer and brighter communities.</p>
+            </div>
+             <div class="card">
+                <img src="download (1).jpeg" alt="">
+                <h3>Billboard Installation</h3>
+                <p>High-quality billboard setups for impactful advertising and branding.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Lucas Technology, We specialize in delivering cutting-edge installation services with a commitment to sustability, safety, and innovation.</p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <form action="" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea name="" id="" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Lucas Technology | All rights reserved.</p>
+    </footer>
+
+    <script src="edmu.js"></script>
+</body>
+</html>
