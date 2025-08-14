@@ -32,3 +32,37 @@ if (menuToggle && navLinks) {
         });
     });
 }
+
+let currentIndex = 0;
+let testimonials = document.querySelectorAll(".testimonial");
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('active');
+        if (i === index) {
+            testimonial.classList.add('active');
+        }
+    });
+}
+
+document.getElementById('next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+ });
+document.getElementById('prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+ });
+
+ showTestimonial(currentIndex);
+
+// document.getElementById("prev").addEventListener("click", () => {
+//     changeSlide(-1);
+// });
+
+// function changeSlide(direction) {
+//     testimonials[currentIndex].classList.remove("active");
+//     currentIndex = (changeSlide + direction + totalSlides) % totalSlides;
+
+//     testimonials[currentIndex].classList.add("active");
+// }

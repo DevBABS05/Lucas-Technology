@@ -107,6 +107,48 @@ header {
     background: #f1f1f1;
     text-align: center;
 }
+.testimonials {
+    padding: 50px 20px;
+    background-color:#002B5B;
+    color: white;
+    text-align: center;
+}
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 150px;
+}
+.testimonial {
+    display: none;
+    font-size: 18px;
+    font-style: italic;
+  
+}
+.testimonial.active{
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.controls {
+    margin-top: 20px;
+}
+.controls button{
+    background: #FFD700;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.controls button:hover {
+    background: #e6c200;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity: 1;}
+}
 .contact {
     padding: 3rem 2rem;
     text-align: center;
